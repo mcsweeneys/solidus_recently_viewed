@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.version     = SpreeRecentlyViewed.version
   s.summary     = 'Adds recently viewed products to Spree'
   s.description = s.summary
-  s.required_ruby_version = '>= 1.9.3'
+  s.required_ruby_version = '>= 2.2.0'
 
   s.authors     = ['Roman Smirnov', 'Brian Quinn']
   s.email       = 'brian@railsdog.com'
@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
 
   s.has_rdoc = false
 
-  s.add_runtime_dependency 'solidus_core'
+  s.add_runtime_dependency 'solidus_core', '~> 2.3.0'
 
   s.add_development_dependency 'rspec-rails', '~> 3.1.0'
   s.add_development_dependency 'factory_girl', '~> 4.4'
