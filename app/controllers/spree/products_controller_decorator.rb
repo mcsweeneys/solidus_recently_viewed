@@ -1,5 +1,5 @@
 Spree::ProductsController.class_eval do
-  after_filter :recently_viewed, :only => :show
+  after_action :recently_viewed, only: :show
 
   def recently_viewed
     id = @product.id
