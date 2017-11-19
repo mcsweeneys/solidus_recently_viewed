@@ -3,11 +3,11 @@ Spree::ProductsController.class_eval do
 
   def recently_viewed
     id = @product.id
-    rvp = (session["recently_viewed_products"] || "").split(', ')
+    rvp = (session["recently_viewed_products"] || "").split(', ').map!(&:to_i)
     rvp.delete(id)
-    rvp << id unless rvp.include?(id.to_s)
-    rvp_max_count = Spree::RecentlyViewed::Config[:recently_viewed_products_max_count] || 5
-    rvp.delete_at(0) if rvp.size > rvp_max_count.to_i
+    rvp.prepend(id)
+    rvp_max_count = (Spree::RecentlyViewed::Config[:recently_viewed_products_max_count] || 5).to_i
+    rvp = rvp.first(rvp_max_count)
     session['recently_viewed_products'] = rvp.join(', ')
   end
 
