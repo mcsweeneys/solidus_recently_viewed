@@ -1,6 +1,6 @@
 RSpec.feature 'Recently Viewed Products', :js do
   background do
-    %w(Mug Shirt Jersey).each { |name| create(:product, name: "#{name}") }
+    %w[Mug Shirt Jersey].each { |name| create(:product, name: name) }
   end
 
   scenario 'keep track of recently viewed products' do
