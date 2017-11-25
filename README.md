@@ -1,7 +1,6 @@
 # Spree Recently Viewed
 
-[![Build Status](https://travis-ci.org/spree-contrib/spree_recently_viewed.svg?branch=2-4-stable)](https://travis-ci.org/spree-contrib/spree_recently_viewed)
-[![Code Climate](https://codeclimate.com/github/spree-contrib/spree_recently_viewed/badges/gpa.svg)](https://codeclimate.com/github/spree-contrib/spree_recently_viewed)
+[![Build Status](https://travis-ci.org/mcsweeneys/solidus_recently_viewed.svg?branch=master)](https://travis-ci.org/mcsweeneys/solidus_recently_viewed)
 
 This extension maintains and displays a list of the products a user has recently viewed.
 
@@ -9,7 +8,7 @@ This extension maintains and displays a list of the products a user has recently
 
 Add the following to you `Gemfile`:
 ```ruby
-gem 'spree_recently_viewed', github: 'spree-contrib/spree_recently_viewed', branch: '2-4-stable'
+gem 'spree_recently_viewed', github: 'mcsweeneys/solidus_recently_viewed'
 ```
 
 And run bundler:
