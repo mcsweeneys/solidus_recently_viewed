@@ -1,4 +1,4 @@
-# Spree Recently Viewed
+# Solidus Recently Viewed
 
 [![Build Status](https://travis-ci.org/mcsweeneys/solidus_recently_viewed.svg?branch=master)](https://travis-ci.org/mcsweeneys/solidus_recently_viewed)
 
