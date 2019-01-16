@@ -21,8 +21,6 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.has_rdoc = false
-
   s.add_dependency 'solidus_core', ['>= 1.2.0', '< 3']
 
   s.add_development_dependency 'capybara', '~> 2.4'
