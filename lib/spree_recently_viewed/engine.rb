@@ -1,3 +1,5 @@
+require_relative '../../app/models/spree/recently_viewed_configuration'
+
 module SpreeRecentlyViewed
   class Engine < Rails::Engine
     require 'spree/core'
